@@ -1,0 +1,552 @@
+[
+  {
+    "question": "1 + 1 = ?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "2 + 3 = ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "5 - 2 = ?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "3 + 4 = ?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "7",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "6 - 1 = ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "2 × 3 = ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "6",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "8 ÷ 2 = ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "9 - 5 = ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "7 + 2 = ?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "answer": "9",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "10 - 7 = ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "3",
+    "difficulty": "veryEasy"
+  },
+  {
+    "question": "12 + 8 = ?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "answer": "20",
+    "difficulty": "easy"
+  },
+  {
+    "question": "15 - 6 = ?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "9",
+    "difficulty": "easy"
+  },
+  {
+    "question": "7 × 3 = ?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "answer": "21",
+    "difficulty": "easy"
+  },
+  {
+    "question": "18 ÷ 3 = ?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "difficulty": "easy"
+  },
+  {
+    "question": "9 + 11 = ?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "answer": "20",
+    "difficulty": "easy"
+  },
+  {
+    "question": "14 - 5 = ?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "9",
+    "difficulty": "easy"
+  },
+  {
+    "question": "6 × 4 = ?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "answer": "24",
+    "difficulty": "easy"
+  },
+  {
+    "question": "20 ÷ 5 = ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "difficulty": "easy"
+  },
+  {
+    "question": "13 + 6 = ?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "answer": "19",
+    "difficulty": "easy"
+  },
+  {
+    "question": "17 - 9 = ?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "8",
+    "difficulty": "easy"
+  },
+  {
+    "question": "25 + 17 = ?",
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "answer": "42",
+    "difficulty": "medium"
+  },
+  {
+    "question": "36 - 19 = ?",
+    "options": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "answer": "17",
+    "difficulty": "medium"
+  },
+  {
+    "question": "12 × 4 = ?",
+    "options": [
+      "46",
+      "47",
+      "48",
+      "49"
+    ],
+    "answer": "48",
+    "difficulty": "medium"
+  },
+  {
+    "question": "45 ÷ 9 = ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "32 + 15 = ?",
+    "options": [
+      "45",
+      "46",
+      "47",
+      "48"
+    ],
+    "answer": "47",
+    "difficulty": "medium"
+  },
+  {
+    "question": "50 - 23 = ?",
+    "options": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "answer": "27",
+    "difficulty": "medium"
+  },
+  {
+    "question": "14 × 3 = ?",
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "answer": "42",
+    "difficulty": "medium"
+  },
+  {
+    "question": "81 ÷ 9 = ?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "answer": "9",
+    "difficulty": "medium"
+  },
+  {
+    "question": "29 + 18 = ?",
+    "options": [
+      "45",
+      "46",
+      "47",
+      "48"
+    ],
+    "answer": "47",
+    "difficulty": "medium"
+  },
+  {
+    "question": "60 - 24 = ?",
+    "options": [
+      "34",
+      "35",
+      "36",
+      "37"
+    ],
+    "answer": "36",
+    "difficulty": "medium"
+  },
+  {
+    "question": "125 + 78 = ?",
+    "options": [
+      "201",
+      "202",
+      "203",
+      "204"
+    ],
+    "answer": "203",
+    "difficulty": "hard"
+  },
+  {
+    "question": "200 - 145 = ?",
+    "options": [
+      "53",
+      "54",
+      "55",
+      "56"
+    ],
+    "answer": "55",
+    "difficulty": "hard"
+  },
+  {
+    "question": "24 × 6 = ?",
+    "options": [
+      "142",
+      "143",
+      "144",
+      "145"
+    ],
+    "answer": "144",
+    "difficulty": "hard"
+  },
+  {
+    "question": "144 ÷ 12 = ?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "answer": "12",
+    "difficulty": "hard"
+  },
+  {
+    "question": "96 + 47 = ?",
+    "options": [
+      "141",
+      "142",
+      "143",
+      "144"
+    ],
+    "answer": "143",
+    "difficulty": "hard"
+  },
+  {
+    "question": "300 - 167 = ?",
+    "options": [
+      "131",
+      "132",
+      "133",
+      "134"
+    ],
+    "answer": "133",
+    "difficulty": "hard"
+  },
+  {
+    "question": "35 × 4 = ?",
+    "options": [
+      "138",
+      "139",
+      "140",
+      "141"
+    ],
+    "answer": "140",
+    "difficulty": "hard"
+  },
+  {
+    "question": "225 ÷ 15 = ?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "answer": "15",
+    "difficulty": "hard"
+  },
+  {
+    "question": "88 + 77 = ?",
+    "options": [
+      "163",
+      "164",
+      "165",
+      "166"
+    ],
+    "answer": "165",
+    "difficulty": "hard"
+  },
+  {
+    "question": "400 - 256 = ?",
+    "options": [
+      "142",
+      "143",
+      "144",
+      "145"
+    ],
+    "answer": "144",
+    "difficulty": "hard"
+  },
+  {
+    "question": "(12 × 8) + 45 = ?",
+    "options": [
+      "139",
+      "140",
+      "141",
+      "142"
+    ],
+    "answer": "141",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "(200 ÷ 4) - 17 = ?",
+    "options": [
+      "32",
+      "33",
+      "34",
+      "35"
+    ],
+    "answer": "33",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "15² = ?",
+    "options": [
+      "215",
+      "220",
+      "225",
+      "230"
+    ],
+    "answer": "225",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "√196 = ?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "answer": "14",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "(45 + 35) ÷ 4 = ?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "answer": "20",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "18² - 100 = ?",
+    "options": [
+      "224",
+      "225",
+      "226",
+      "227"
+    ],
+    "answer": "224",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "(72 ÷ 8) × 9 = ?",
+    "options": [
+      "79",
+      "80",
+      "81",
+      "82"
+    ],
+    "answer": "81",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "√256 + 15 = ?",
+    "options": [
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "answer": "31",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "(150 - 30) ÷ 6 = ?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "answer": "20",
+    "difficulty": "veryHard"
+  },
+  {
+    "question": "20² - 75 = ?",
+    "options": [
+      "325",
+      "325",
+      "325",
+      "325"
+    ],
+    "answer": "325",
+    "difficulty": "veryHard"
+  }
+]

@@ -1,0 +1,189 @@
+# Adaptive Gamification Library for Flutter-Based Educational Applications
+
+An adaptive gamification system for educational applications built with Flutter.  
+The system uses Reinforcement Learning techniques to dynamically adjust the difficulty of learning tasks and improve learner engagement, motivation, and performance.
+
+This repository contains two main components:
+
+1. Reinforcement Learning training system (Python) – see [Python README](adaptive_gamification_rl%20(Python)/README.md)  
+2. Flutter-based educational application demonstrating the adaptive system – see [Flutter README](adaptive_quiz%20(Flutter)/README.md)
+
+The example application included in this project is **Adaptive Math Quiz**.
+
+---
+
+## Project Overview
+
+Traditional educational applications often present the same level of difficulty to all learners.  
+Students differ in ability, engagement, and learning speed.
+
+This project introduces an **adaptive gamification library** that dynamically adjusts task difficulty based on learner state, using four key indicators:
+
+- Engagement
+- Motivation
+- Flow
+- Performance
+
+The system selects the most appropriate difficulty level for each learning task to maintain optimal learner engagement and improve performance.
+
+---
+
+## System Architecture
+
+The project consists of two main subsystems:
+
+### 1. Reinforcement Learning Engine (Python)
+
+Trains the adaptive policy using simulated learner behavior.  
+Technologies used: Python, PyTorch, PPO.  
+
+The trained policy is exported as `adaptive_policy.json` for use by the Flutter application.  
+
+**For technical details, installation, and running the RL system, refer to the [Python README](adaptive_gamification_rl%20(Python)/README.md).**
+
+---
+
+### 2. Flutter Educational Application
+
+Demonstrates integration of the adaptive gamification library into a mobile app.
+
+Main features:
+
+- Adaptive question difficulty
+- Real-time learner state tracking
+- Gamified learning experience
+- Performance visualization
+- Session history tracking
+
+Technologies used: Flutter, Dart, SQLite, fl_chart.
+
+**For installation and running instructions, see the [Flutter README](adaptive_quiz%20(Flutter)/README.md).**
+
+---
+
+## Adaptive Learning Model
+
+The system tracks the learner state with four normalized metrics (0.0–1.0):
+
+- Engagement
+- Motivation
+- Flow
+- Performance
+
+The reinforcement learning agent selects one of five difficulty levels:
+
+- Very Easy
+- Easy
+- Medium
+- Hard
+- Very Hard
+
+The goal is to maintain an optimal learning state while gradually improving learner performance.
+
+---
+
+## Repository Structure
+
+adaptive-gamification-library/
+
+- README.md
+- LICENSE
+- adaptive_gamification_rl/ (Python)
+  - [See Python README for details](adaptive_gamification_rl%20(Python)/README.md)
+- adaptive_quiz/ (Flutter)
+  - [See Flutter README for details](adaptive_quiz%20(Flutter)/README.md)
+
+---
+
+## Example Application
+
+The mobile application **Adaptive Math Quiz** demonstrates:
+
+- Multiple quiz stages
+- Adaptive difficulty progression
+- Learner state monitoring
+- Learning analytics
+- Session history
+
+---
+
+## How the Adaptation Works
+
+1. The learner answers a question.
+2. The system updates the learner state.
+3. The adaptive policy selects the next difficulty level.
+4. A new question is selected from the question bank.
+5. Repeat until the session ends.
+
+---
+
+## Data Visualization
+
+The app provides visual feedback via performance charts tracking:
+
+- Engagement progression
+- Motivation progression
+- Flow state
+- Performance level
+- Difficulty progression
+
+---
+
+## Research Context
+
+This project integrates:
+
+- Reinforcement Learning
+- Gamification
+- Adaptive Educational Systems
+
+Objective: improve learner engagement and provide personalized learning experiences in mobile educational applications.
+
+---
+
+## Future Improvements
+
+Potential extensions:
+
+- Online policy updates
+- Multi-subject learning support
+- Cloud-based learner analytics
+- Teacher dashboards
+- Personal learning recommendations
+
+---
+
+## Demonstration Materials
+
+A `demo/` folder is included in this repository, organized as follows:
+
+- **screenshots/** – Screenshots of the application, showing different UI screens:
+  - `home_screen.png` – Main home screen of the app, showing navigation to start the quiz or view progress history
+  - `quiz_screen_start.png` – Quiz interface at the beginning of a session, showing the first question and adaptive progress line
+  - `quiz_screen_progress.png` – Quiz interface during a session, showing a question being answered and learner state updates in real time
+  - `result_screen.png` – Results screen at the end of a session, displaying final user level, performance charts, and adaptive log 
+  - `history_screen.png` – Session history screen, showing past sessions, progress metrics, and line charts for engagement and difficulty over time
+
+- **python_results/** – Visualizations and results generated by the Python RL system:
+  - `action_distribution.png`
+  - `baseline_comparison_curve.png`
+  - `comprehensive_heatmap.png`
+  - `reward_curve.png`
+  - `selected_heatmap_1.png`
+  - `selected_heatmap_2.png`
+  - `state_trajectories.png`
+  
+- **csv/** – CSV files containing logged training data:
+  - `ablation.csv`
+  - `baseline_per_episode.csv`
+  - `training_log.csv`
+
+- **videos/** – Short demonstration videos of the Flutter application in action.
+
+These materials can be reviewed locally by browsing the `demo/` directory, or online via the GitHub web interface. Note that large video files may need to be compressed or split due to GitHub's upload size limits.
+
+---
+
+## License
+
+This project is provided for educational and research purposes.

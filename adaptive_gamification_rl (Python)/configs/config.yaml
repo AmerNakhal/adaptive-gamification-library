@@ -1,0 +1,37 @@
+# Reproducibility
+seed: null
+# Environment
+num_states: 4
+num_actions: 6
+max_steps_per_episode: 50
+# PPO
+lr: 0.0003
+gamma: 0.99
+clip_epsilon: 0.2
+update_epochs: 15
+batch_size: 128
+gae_lambda: 0.95
+entropy_coef: 0.01
+value_loss_coef: 0.5
+max_grad_norm: 0.5
+# Training
+episodes: 10000
+log_interval: 10
+# Evaluation
+eval_interval: 20
+eval_episodes: 3000
+deterministic_eval: true
+# Reward
+reward_weights:
+  engagement: 0.4
+  motivation: 0.3
+  flow: 0.3
+reward_normalization: true
+reward_clip: 5.0
+log_reward_components: true
+# Heatmaps
+num_selected_heatmaps: 5
+heatmap_resolution: 0.1
+# Paths
+results_dir: results
+export_dir: export
