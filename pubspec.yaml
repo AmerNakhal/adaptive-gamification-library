@@ -1,0 +1,19 @@
+name: adaptive_gamification
+description: Adaptive gamification engine powered by reinforcement learning for dynamic difficulty adjustment.
+version: 0.0.2
+homepage: https://github.com/AmerNakhal/adaptive-gamification-library
+repository: https://github.com/AmerNakhal/adaptive-gamification-library
+issue_tracker: https://github.com/AmerNakhal/adaptive-gamification-library/issues
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=2.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

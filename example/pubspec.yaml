@@ -1,0 +1,29 @@
+name: adaptive_gamification_example
+description: Example app demonstrating the adaptive_gamification package.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # خيار 1 (أفضل أثناء التطوير محلياً داخل نفس repo):
+  adaptive_gamification:
+    path: ../
+
+  # خيار 2 (بعد نشر المكتبة على pub.dev استبدله بهذا):
+  # adaptive_gamification: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/adaptive_policy_seed_42.json
