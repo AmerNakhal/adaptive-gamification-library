@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "formatVersion": "1.0",
+    "policyType": "deterministic_lookup_table",
+    "exportMode": "normalized_entries_export",
+    "stateOrder": [
+      "engagement",
+      "motivation",
+      "flow",
+      "performance"
+    ],
+    "stateKeyFormat": "fixed_decimal_pipe_delimited",
+    "stateDecimals": 2,
+    "exportResolution": 0.1,
+    "stateDimensionCount": 4,
+    "exportedStateCount": 3,
+    "actionCount": 6,
+    "actionNames": {
+      "0": "rest",
+      "1": "easy_task",
+      "2": "medium_task",
+      "3": "hard_task",
+      "4": "motivation_boost",
+      "5": "flow_task"
+    },
+    "actionSelection": "deterministic_argmax",
+    "decisionMapping": "difficulty_and_support_mapping_v1",
+    "source": "test_fixture",
+    "description": "Invalid normalized exported policy fixture containing duplicate state keys.",
+    "notes": "Used to verify that validation detects duplicate stateKey values across entries.",
+    "exportedAt": "2026-01-01T13:00:00Z"
+  },
+  "entries": [
+    {
+      "stateKey": "0.10|0.20|0.30|0.40",
+      "decision": {
+        "nextDifficulty": 1,
+        "source": "exact_match",
+        "reason": "Reduce challenge for a low state.",
+        "actionLabel": "easy_task",
+        "details": {
+          "sourceActionId": 1,
+          "sourceActionName": "easy_task",
+          "actionGroup": "challenge_adjustment",
+          "decisionType": "difficulty_adjustment",
+          "difficultyChange": "decrease",
+          "difficultyRankBefore": 2,
+          "difficultyRankAfter": 1,
+          "difficultyDelta": -1,
+          "currentDifficulty": "medium",
+          "nextDifficultyLabel": "easy",
+          "supportStrategy": "reduce_pressure",
+          "pedagogicalEffect": "difficulty_reduction",
+          "stateInterpretation": {
+            "eng": 0.1,
+            "mot": 0.2,
+            "flow": 0.3,
+            "perf": 0.4
+          },
+          "stateFlags": {
+            "low_engagement": true
+          },
+          "actionProbabilities": [
+            0.05,
+            0.70,
+            0.15,
+            0.05,
+            0.03,
+            0.02
+          ],
+          "valueEstimate": 0.42
+        }
+      },
+      "stateValues": {
+        "eng": 0.1,
+        "mot": 0.2,
+        "flow": 0.3,
+        "perf": 0.4
+      },
+      "actionId": 1,
+      "actionLabel": "easy_task",
+      "probabilities": [
+        0.05,
+        0.70,
+        0.15,
+        0.05,
+        0.03,
+        0.02
+      ],
+      "valueEstimate": 0.42
+    },
+    {
+      "stateKey": "0.10|0.20|0.30|0.40",
+      "decision": {
+        "nextDifficulty": 3,
+        "source": "exact_match",
+        "reason": "Duplicate key entry that should trigger validator failure.",
+        "actionLabel": "hard_task",
+        "details": {
+          "sourceActionId": 3,
+          "sourceActionName": "hard_task",
+          "actionGroup": "challenge_adjustment",
+          "decisionType": "difficulty_adjustment",
+          "difficultyChange": "increase",
+          "difficultyRankBefore": 2,
+          "difficultyRankAfter": 3,
+          "difficultyDelta": 1,
+          "currentDifficulty": "medium",
+          "nextDifficultyLabel": "hard",
+          "supportStrategy": "increase_challenge",
+          "pedagogicalEffect": "difficulty_increase",
+          "stateInterpretation": {
+            "eng": 0.1,
+            "mot": 0.2,
+            "flow": 0.3,
+            "perf": 0.4
+          },
+          "stateFlags": {
+            "duplicate_state_key": true
+          },
+          "actionProbabilities": [
+            0.02,
+            0.08,
+            0.15,
+            0.65,
+            0.05,
+            0.05
+          ],
+          "valueEstimate": 0.81
+        }
+      },
+      "stateValues": {
+        "eng": 0.1,
+        "mot": 0.2,
+        "flow": 0.3,
+        "perf": 0.4
+      },
+      "actionId": 3,
+      "actionLabel": "hard_task",
+      "probabilities": [
+        0.02,
+        0.08,
+        0.15,
+        0.65,
+        0.05,
+        0.05
+      ],
+      "valueEstimate": 0.81
+    },
+    {
+      "stateKey": "0.80|0.30|0.50|0.60",
+      "decision": {
+        "nextDifficulty": 2,
+        "source": "exact_match",
+        "reason": "Motivation support is recommended without changing difficulty.",
+        "actionLabel": "motivation_boost",
+        "details": {
+          "sourceActionId": 4,
+          "sourceActionName": "motivation_boost",
+          "actionGroup": "motivational_support",
+          "decisionType": "motivational_support",
+          "difficultyChange": "maintain",
+          "difficultyRankBefore": 2,
+          "difficultyRankAfter": 2,
+          "difficultyDelta": 0,
+          "currentDifficulty": "medium",
+          "nextDifficultyLabel": "medium",
+          "supportStrategy": "encourage_persistence",
+          "pedagogicalEffect": "motivational_reinforcement",
+          "stateInterpretation": {
+            "eng": 0.8,
+            "mot": 0.3,
+            "flow": 0.5,
+            "perf": 0.6
+          },
+          "stateFlags": {
+            "low_motivation": true
+          },
+          "actionProbabilities": [
+            0.03,
+            0.07,
+            0.20,
+            0.10,
+            0.55,
+            0.05
+          ],
+          "valueEstimate": 0.68
+        }
+      },
+      "stateValues": {
+        "eng": 0.8,
+        "mot": 0.3,
+        "flow": 0.5,
+        "perf": 0.6
+      },
+      "actionId": 4,
+      "actionLabel": "motivation_boost",
+      "probabilities": [
+        0.03,
+        0.07,
+        0.20,
+        0.10,
+        0.55,
+        0.05
+      ],
+      "valueEstimate": 0.68
+    }
+  ]
+}

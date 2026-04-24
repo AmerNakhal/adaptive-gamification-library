@@ -1,0 +1,25 @@
+name: adaptive_gamification_example
+description: Example Flutter app showcasing the adaptive_gamification library for policy-driven decisions, recommendations, traces, and session-aware analytics.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  adaptive_gamification:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/policies/quiz_policy.json
+    - assets/policies/task_progression_policy.json

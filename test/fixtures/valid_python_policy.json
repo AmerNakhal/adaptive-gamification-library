@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "format_version": "2.0",
+    "policy_type": "deterministic_lookup_table",
+    "export_mode": "python_policy_map_export",
+    "state_order": [
+      "eng",
+      "mot",
+      "flow",
+      "perf"
+    ],
+    "state_key_format": "fixed_decimal_pipe_delimited",
+    "state_decimals": 2,
+    "export_resolution": 0.1,
+    "state_dim": 4,
+    "num_exported_states": 3,
+    "num_actions": 6,
+    "action_names": {
+      "0": "rest",
+      "1": "easy_task",
+      "2": "medium_task",
+      "3": "hard_task",
+      "4": "motivation_boost",
+      "5": "flow_task"
+    },
+    "action_selection": "deterministic_argmax",
+    "decision_mapping": "difficulty_and_support_mapping_v1",
+    "source": "test_fixture",
+    "description": "Valid python-style exported policy fixture for parser, loader, and integration tests.",
+    "notes": "This fixture uses the policy map format produced by the Python export pipeline.",
+    "exported_at": "2026-01-01T12:30:00Z"
+  },
+  "policy": {
+    "0.10|0.20|0.30|0.40": {
+      "state": {
+        "eng": 0.1,
+        "mot": 0.2,
+        "flow": 0.3,
+        "perf": 0.4
+      },
+      "action": 1,
+      "action_label": "easy_task",
+      "probs": [
+        0.05,
+        0.70,
+        0.15,
+        0.05,
+        0.03,
+        0.02
+      ],
+      "value": 0.42,
+      "decision": {
+        "reason": "Low overall state suggests reducing challenge.",
+        "source_action_id": 1,
+        "source_action_name": "easy_task",
+        "action_group": "challenge_adjustment",
+        "decision_type": "difficulty_adjustment",
+        "difficulty_change": "decrease",
+        "difficulty_rank_before": 2,
+        "difficulty_rank_after": 1,
+        "difficulty_delta": -1,
+        "current_difficulty": "medium",
+        "next_difficulty": "easy",
+        "support_strategy": "reduce_pressure",
+        "pedagogical_effect": "difficulty_reduction",
+        "state_interpretation": {
+          "eng": 0.1,
+          "mot": 0.2,
+          "flow": 0.3,
+          "perf": 0.4
+        },
+        "state_flags": {
+          "low_engagement": true,
+          "low_motivation": true,
+          "low_flow": true
+        }
+      }
+    },
+    "0.40|0.50|0.60|0.70": {
+      "state": {
+        "eng": 0.4,
+        "mot": 0.5,
+        "flow": 0.6,
+        "perf": 0.7
+      },
+      "action": 3,
+      "action_label": "hard_task",
+      "probs": [
+        0.02,
+        0.08,
+        0.15,
+        0.65,
+        0.05,
+        0.05
+      ],
+      "value": 0.81,
+      "decision": {
+        "reason": "Stable performance and flow support an increase in challenge.",
+        "source_action_id": 3,
+        "source_action_name": "hard_task",
+        "action_group": "challenge_adjustment",
+        "decision_type": "difficulty_adjustment",
+        "difficulty_change": "increase",
+        "difficulty_rank_before": 2,
+        "difficulty_rank_after": 3,
+        "difficulty_delta": 1,
+        "current_difficulty": "medium",
+        "next_difficulty": "hard",
+        "support_strategy": "increase_challenge",
+        "pedagogical_effect": "difficulty_increase",
+        "state_interpretation": {
+          "eng": 0.4,
+          "mot": 0.5,
+          "flow": 0.6,
+          "perf": 0.7
+        },
+        "state_flags": {
+          "balanced_state": true
+        }
+      }
+    },
+    "0.80|0.30|0.50|0.60": {
+      "state": {
+        "eng": 0.8,
+        "mot": 0.3,
+        "flow": 0.5,
+        "perf": 0.6
+      },
+      "action": 4,
+      "action_label": "motivation_boost",
+      "probs": [
+        0.03,
+        0.07,
+        0.20,
+        0.10,
+        0.55,
+        0.05
+      ],
+      "value": 0.68,
+      "decision": {
+        "reason": "Motivation support is recommended without changing difficulty.",
+        "source_action_id": 4,
+        "source_action_name": "motivation_boost",
+        "action_group": "motivational_support",
+        "decision_type": "motivational_support",
+        "difficulty_change": "maintain",
+        "difficulty_rank_before": 2,
+        "difficulty_rank_after": 2,
+        "difficulty_delta": 0,
+        "current_difficulty": "medium",
+        "next_difficulty": "medium",
+        "support_strategy": "encourage_persistence",
+        "pedagogical_effect": "motivational_reinforcement",
+        "state_interpretation": {
+          "eng": 0.8,
+          "mot": 0.3,
+          "flow": 0.5,
+          "perf": 0.6
+        },
+        "state_flags": {
+          "low_motivation": true,
+          "high_engagement": true
+        }
+      }
+    }
+  }
+}

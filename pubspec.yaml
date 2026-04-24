@@ -1,0 +1,26 @@
+name: adaptive_gamification
+description: A Flutter library for deterministic execution of exported adaptive policies, recommendations, traces, and session-aware runtime analytics.
+version: 0.2.1
+homepage: https://github.com/AmerNakhal/adaptive-gamification-library
+repository: https://github.com/AmerNakhal/adaptive-gamification-library
+issue_tracker: https://github.com/AmerNakhal/adaptive-gamification-library/issues
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=2.17.0"
+
+topics:
+  - adaptive-learning
+  - reinforcement-learning
+  - gamification
+  - policy-runtime
+  - flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
